@@ -16,13 +16,17 @@
 		</style>
 		<form action="#" method="POST">
 			<label for="nombre">Nombre</label>
+			<!-- Tes caracteres minimo no numericos -->
 			<input type="text" pattern="[A-Za-z]{3}" /><br />
 			<label for="apellido">Apellido</label>
+			<!-- Minimo dos palabras no numericas -->
 			<input type="text" pattern="\w+{2}" /><br />
 			<label for="email">eMail</label>
+			<!-- 3 letras antes de la @ minimo 5 antes del . y dos o tres caracteres despues -->
 			<input type="email" pattern="" /><br />
 			<label for="fechaNacimiento">Fecha de cacimiento</label>
-			<input type="text" pattern="" /><br />
+			<!-- Fecha de nacimiento en formato DD/MM/YYYY -->
+			<input type="date" pattern="" /><br />
 			<input type="submit" value="Enviar" />
 		</form>
 	</body>
